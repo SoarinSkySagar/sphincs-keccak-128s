@@ -1,0 +1,15 @@
+{
+  "name": "sphincs-keccak-128s",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node signer/validate.mjs",
+    "vectors": "node signer/gen-vectors.mjs test/fixtures/sphincs-keccak-128s.json 3"
+  },
+  "dependencies": {
+    "@noble/hashes": "^1.8.0"
+  },
+  "devDependencies": {
+    "@noble/post-quantum": "^0.7.1"
+  }
+}
